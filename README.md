@@ -1,11 +1,33 @@
-# Mobile-Games-A-B-Testing-with-Cookie-Cats
+# A/B Testing with Cookie Cats Game 🎮🍪
 
-Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three" style puzzle game 
-where the player must connect tiles of the same color in order to clear the board and win the level. It also features singing cats. Use
-URL below to view a trailer of the game:7
+## Project Overview
+This project focuses on A/B testing in the popular mobile game **Cookie Cats**. The primary goal is to evaluate the impact of altering the level progression flow on player retention. The game introduced an in-game gate that blocks progress after a certain number of levels, and we analyze two groups: one where the gate appears early and another where it appears later.
 
-https://youtu.be/GaP5f0jVTWE
+## Problem Statement
+The question we aim to answer is: **Does the placement of the gate affect player retention and engagement?** Using data collected from both groups of players, we test whether the placement impacts how long users stay engaged with the game.
 
-As players progress through the game they will encounter gates that force them to wait some time before they can progress or make an 
-in-app purchase. In this project, we will analyze the result of an AB-test where the first gate in Cookie Cats was moved from level 30 to 
-level 40. In particular, we will analyze the impact on player retention.
+## Data
+The dataset includes:
+- Player IDs
+- Retention data (1-day and 7-day)
+- Information on when the gate was introduced (early or late)
+
+## Tools & Techniques
+- **Python**: For data analysis and visualization
+- **Pandas**: For data manipulation
+- **Matplotlib/Seaborn**: For data visualization
+- **SciPy**: For statistical testing
+- **A/B Testing**: To compare retention between the two groups
+
+## Analysis Process
+1. **Data Exploration**: Understanding and cleaning the dataset.
+2. **Retention Metrics**: Comparing 1-day and 7-day retention between the two player groups.
+3. **Hypothesis Testing**: Conducting statistical tests to determine if the difference in retention is significant.
+4. **Conclusions**: Summarizing insights on whether changing the gate's placement improves player retention.
+
+## Results
+The results of the A/B test help the game developers decide the optimal point for the gate to improve player engagement without negatively impacting retention.
+
+## Conclusion
+This analysis provides data-driven insights into how minor design changes in mobile games can significantly influence player behavior and overall game success.
+
